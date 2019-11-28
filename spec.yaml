@@ -13,3 +13,9 @@ paths:
       responses:
         200:
           description: OK
+    put:
+      produces:
+      - application/json
+      responses:
+        200:
+          description: OK
