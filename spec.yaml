@@ -7,3 +7,9 @@ paths:
       responses:
         200:
           description: OK
+    post:
+      produces:
+      - application/json
+      responses:
+        200:
+          description: OK
