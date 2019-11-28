@@ -1,0 +1,9 @@
+swagger: "2.0"
+paths:
+  /html:
+    get:
+      produces:
+      - application/json
+      responses:
+        200:
+          description: OK
