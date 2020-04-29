@@ -85,6 +85,8 @@ definitions:
           wrapped: true
         items:
           $ref: '#/definitions/Tag'
+      myk:
+        type: string
       status:
         type: string
         description: pet status in the store
