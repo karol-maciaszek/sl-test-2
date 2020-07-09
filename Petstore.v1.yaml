@@ -39,3 +39,6 @@ paths:
 info:
   title: Petstore
   description: ''
+schemes:
+  - http
+host: abc.com
