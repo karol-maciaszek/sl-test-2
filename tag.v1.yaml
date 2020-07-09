@@ -7,5 +7,5 @@ properties:
     format: int64
   name:
     type: string
-  myk:
+  myq:
     type: string
