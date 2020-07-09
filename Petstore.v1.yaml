@@ -29,7 +29,7 @@ paths:
           schema:
             type: array
             items:
-              $ref: ../pet.v1.yaml
+              $ref: ./pet.v1.yaml
         '400':
           description: Invalid status value
       security:
