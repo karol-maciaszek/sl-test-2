@@ -1,4 +1,6 @@
 swagger: '2.0'
+tags:
+  - pet
 paths:
   /pet/findByStatus:
     get:
