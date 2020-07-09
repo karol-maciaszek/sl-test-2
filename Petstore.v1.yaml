@@ -1,9 +1,6 @@
 openapi: 3.0.0
 info:
-  description:
-    'This is a sample server Petstore server.  You can find out more about Swagger at
-    [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample,
-    you can use the api key `special-key` to test the authorization filters.'
+  description: 'This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.'
   version: 1.0.0
   title: Swagger Petstore
   termsOfService: 'http://swagger.io/terms/'
@@ -49,35 +46,14 @@ paths:
           content:
             '*/*':
               schema:
-                type: object
-                properties: {}
+                type: array
+                items:
+                  $ref: ./pet.v1.yaml
       summary: List pets
       parameters:
         - $ref: '#/components/parameters/skip'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/rate-limit'
-  '/pet/{petId}':
-    parameters:
-      - $ref: '#/components/parameters/pet-id'
-    put:
-      tags:
-        - pet
-      summary: Update an existing pet
-      description: ''
-      operationId: updatePet
-      responses:
-        '400':
-          description: Invalid ID supplied
-        '404':
-          $ref: '#/components/responses/404'
-        '405':
-          description: Validation exception
-      security:
-        - petstore_auth:
-            - 'write:pets'
-            - 'read:pets'
-      requestBody:
-        $ref: '#/components/requestBodies/Pet'
 externalDocs:
   description: Find out more about Swagger
   url: 'http://swagger.io'
@@ -139,51 +115,4 @@ components:
       type: apiKey
       name: api_key
       in: header
-  schemas:
-    Pet:
-      type: object
-      xml:
-        name: Pet
-      properties:
-        id:
-          type: integer
-          format: int64
-        category:
-          $ref: '#/components/schemas/Category'
-        name:
-          type: string
-          example: doggie
-        photoUrls:
-          type: array
-          xml:
-            name: photoUrl
-            wrapped: true
-          items:
-            type: string
-        status:
-          type: string
-          description: pet status in the store
-          enum:
-            - available
-            - pending
-            - sold
-      required:
-        - name
-        - photoUrls
-    Error:
-      type: object
-      properties:
-        code:
-          type: string
-        message:
-          type: string
-      required:
-        - code
-    Category:
-      type: object
-      properties:
-        name:
-          type: string
-      required:
-        - name
-      title: Category
+  schemas: {}
