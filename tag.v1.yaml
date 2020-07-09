@@ -1,9 +1,11 @@
 type: object
+xml:
+  name: Tag
 properties:
   id:
     type: integer
     format: int64
   name:
     type: string
-xml:
-  name: Tag
+  myk:
+    type: string
