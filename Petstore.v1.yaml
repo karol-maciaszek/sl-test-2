@@ -129,6 +129,9 @@ components:
           type: string
         greatness_lvl:
           type: string
+        beautifulnes:
+          type: string
       required:
         - id
         - greatness_lvl
+        - beautifulnes
