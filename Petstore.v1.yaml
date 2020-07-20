@@ -48,7 +48,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: ./pet.v1.yaml
+                  $ref: '#/components/schemas/das_karol'
       summary: List pets
       parameters:
         - $ref: '#/components/parameters/skip'
@@ -115,4 +115,15 @@ components:
       type: apiKey
       name: api_key
       in: header
-  schemas: {}
+  schemas:
+    das_karol:
+      title: das_karol
+      type: object
+      properties:
+        id:
+          type: string
+        greatness_lvl:
+          type: string
+      required:
+        - id
+        - greatness_lvl
