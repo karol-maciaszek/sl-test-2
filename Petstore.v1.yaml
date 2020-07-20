@@ -49,11 +49,16 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/das_karol'
-      summary: List pets
+      summary: List pets man!
       parameters:
         - $ref: '#/components/parameters/skip'
         - $ref: '#/components/parameters/limit'
         - $ref: '#/components/parameters/rate-limit'
+        - schema:
+            type: string
+          in: query
+          name: beton
+          required: true
 externalDocs:
   description: Find out more about Swagger
   url: 'http://swagger.io'
