@@ -37,3 +37,4 @@ properties:
 required:
   - name
   - photoUrls
+  - the_karol
