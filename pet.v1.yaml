@@ -32,6 +32,8 @@ properties:
       - available
       - pending
       - sold
+  the_karol:
+    $ref: 'http://stoplight.stoplight-local.com:8080/api/v1/projects/stoplight/sl-test/nodes%2Fspec.yaml%2Fdefinitions%2FKarol?deref=bundle'
 required:
   - name
   - photoUrls
