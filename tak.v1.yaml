@@ -11,3 +11,4 @@ properties:
     type: string
 required:
   - myq
+title: ''

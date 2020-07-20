@@ -1,7 +1,8 @@
 type: object
-required:
-  - name
-  - photoUrls
+xml:
+  name: Pet
+x-examples:
+  example-1: {}
 properties:
   id:
     type: integer
@@ -20,11 +21,8 @@ properties:
       type: string
   tags:
     type: array
-    xml:
-      name: tag
-      wrapped: true
     items:
-      $ref: tag.v1.yaml
+      $ref: tak.v1.yaml
   myk:
     type: string
   status:
@@ -34,7 +32,6 @@ properties:
       - available
       - pending
       - sold
-xml:
-  name: Pet
-x-examples:
-  example-1: {}
+required:
+  - name
+  - photoUrls
