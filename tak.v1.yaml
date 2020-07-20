@@ -1,14 +1,14 @@
 type: object
 xml:
   name: Tag
+title: ''
 properties:
   id:
     type: integer
     format: int64
   name:
     type: string
-  myq:
+  mak:
     type: string
 required:
-  - myq
-title: ''
+  - mak
