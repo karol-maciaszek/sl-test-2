@@ -2,7 +2,7 @@
   "items": [
     {
       "type": "divider",
-      "title": "openapi"
+      "title": "BETON!"
     },
     {
       "uri": "/reference/openapi.v1.yaml",
