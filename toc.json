@@ -2,7 +2,8 @@
   "items": [
     {
       "type": "divider",
-      "title": "BETON!"
+      "title": "BETON!!",
+      "an additional garbage": "Meh"
     },
     {
       "uri": "/reference/openapi.v1.yaml",
