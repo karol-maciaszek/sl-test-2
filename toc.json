@@ -9,6 +9,22 @@
       "uri": "/Petstore.v1.yaml",
       "type": "item",
       "title": "Overview"
+    },
+    {
+      "uri": "/om/nom/nom",
+      "type": "item",
+      "title": "Om nom nom"
+    },
+    {
+      "type": "group",
+      "title": "Om nom nom",
+      "items": [
+        {
+          "uri": "/Petstore.v1.yaml",
+          "type": "item",
+          "title": "Overview"
+        }
+      ]
     }
   ]
 }
